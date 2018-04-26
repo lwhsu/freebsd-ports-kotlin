@@ -12,7 +12,7 @@ COMMENT=	Kotlin Programming Language
 LICENSE=	APACHE20
 LICENSE_FILE=	${WRKSRC}/license/LICENSE.txt
 
-RUN_DEPENDS=	bash:/shells/bash
+RUN_DEPENDS=	bash:shells/bash
 
 USES=	zip
 
