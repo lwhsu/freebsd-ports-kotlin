@@ -43,6 +43,8 @@ libexec/kotlin-test-js.jar
 libexec/kotlin-test-junit-sources.jar
 libexec/kotlin-test-junit.jar
 libexec/kotlin-test-sources.jar
+libexec/kotlin-test-testng-sources.jar
+libexec/kotlin-test-testng.jar
 libexec/kotlin-test.jar
 libexec/noarg-compiler-plugin.jar
 libexec/sam-with-receiver-compiler-plugin.jar
