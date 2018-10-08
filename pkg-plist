@@ -15,6 +15,7 @@ libexec/kotlin-annotations-jvm.jar
 libexec/kotlin-ant.jar
 libexec/kotlin-compiler.jar
 libexec/kotlin-daemon-client.jar
+libexec/kotlin-imports-dumper-compiler-plugin.jar
 libexec/kotlin-jslib-sources.jar
 libexec/kotlin-jslib.jar
 libexec/kotlin-preloader.jar
@@ -25,6 +26,10 @@ libexec/kotlin-runtime-sources.jar
 libexec/kotlin-runtime.jar
 libexec/kotlin-script-runtime-sources.jar
 libexec/kotlin-script-runtime.jar
+libexec/kotlin-scripting-common.jar
+libexec/kotlin-scripting-compiler.jar
+libexec/kotlin-scripting-jvm.jar
+libexec/kotlin-scripting-misc.jar
 libexec/kotlin-source-sections-compiler-plugin.jar
 libexec/kotlin-stdlib-jdk7-sources.jar
 libexec/kotlin-stdlib-jdk7.jar
@@ -42,6 +47,8 @@ libexec/kotlin-test-js-sources.jar
 libexec/kotlin-test-js.jar
 libexec/kotlin-test-junit-sources.jar
 libexec/kotlin-test-junit.jar
+libexec/kotlin-test-junit5-sources.jar
+libexec/kotlin-test-junit5.jar
 libexec/kotlin-test-sources.jar
 libexec/kotlin-test-testng-sources.jar
 libexec/kotlin-test-testng.jar
