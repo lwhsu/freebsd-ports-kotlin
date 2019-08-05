@@ -1,7 +1,7 @@
 # $FreeBSD$
 
 PORTNAME=	kotlin
-PORTVERSION=	1.3.20
+PORTVERSION=	1.3.41
 CATEGORIES=	lang
 MASTER_SITES=	https://github.com/JetBrains/kotlin/releases/download/v${PORTVERSION}/
 DISTNAME=	kotlin-compiler-${PORTVERSION}
