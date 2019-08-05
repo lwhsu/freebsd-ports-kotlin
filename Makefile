@@ -28,12 +28,9 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/bin
 	cd ${WRKSRC}/bin && ${COPYTREE_BIN} . ${STAGEDIR}${DATADIR}/bin
 	cd ${WRKSRC}/lib && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/lib
-	${LN} -sf ${DATADIR}/bin/kapt ${STAGEDIR}${PREFIX}/bin/kapt
-	${LN} -sf ${DATADIR}/bin/kotlin ${STAGEDIR}${PREFIX}/bin/kotlin
-	${LN} -sf ${DATADIR}/bin/kotlin-dce-js ${STAGEDIR}${PREFIX}/bin/kotlin-dce-js
-	${LN} -sf ${DATADIR}/bin/kotlinc ${STAGEDIR}${PREFIX}/bin/kotlinc
-	${LN} -sf ${DATADIR}/bin/kotlinc-js ${STAGEDIR}${PREFIX}/bin/kotlinc-js
-	${LN} -sf ${DATADIR}/bin/kotlinc-jvm ${STAGEDIR}${PREFIX}/bin/kotlinc-jvm
+.for f in kapt kotlin kotlin-dce-js kotlinc kotlinc-js kotlinc-jvm
+	${LN} -sf ${DATADIR}/bin/${f} ${STAGEDIR}${PREFIX}/bin/${f}
+.endfor
 	${INSTALL_DATA} ${WRKSRC}/build.txt ${STAGEDIR}${DATADIR}
 
 .include <bsd.port.mk>
