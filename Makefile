@@ -18,6 +18,7 @@ USES=	zip
 
 WRKSRC=	${WRKDIR}/kotlinc
 
+USE_JAVA=	yes
 NO_BUILD=	yes
 
 KOTLIN_BIN=	kapt \
