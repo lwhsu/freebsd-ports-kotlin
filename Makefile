@@ -18,7 +18,15 @@ USES=	zip
 
 WRKSRC=	${WRKDIR}/kotlinc
 
+USE_JAVA=	yes
 NO_BUILD=	yes
+
+KOTLIN_BIN=	kapt \
+		kotlin \
+		kotlin-dce-js \
+		kotlinc \
+		kotlinc-js \
+		kotlinc-jvm
 
 post-extract:
 	${RM} ${WRKSRC}/bin/*.bat
@@ -28,7 +36,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}${DATADIR}/bin
 	cd ${WRKSRC}/bin && ${COPYTREE_BIN} . ${STAGEDIR}${DATADIR}/bin
 	cd ${WRKSRC}/lib && ${COPYTREE_SHARE} . ${STAGEDIR}${DATADIR}/lib
-.for f in kapt kotlin kotlin-dce-js kotlinc kotlinc-js kotlinc-jvm
+.for f in ${KOTLIN_BIN}
 	${LN} -sf ${DATADIR}/bin/${f} ${STAGEDIR}${PREFIX}/bin/${f}
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/build.txt ${STAGEDIR}${DATADIR}
