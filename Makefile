@@ -6,7 +6,7 @@ CATEGORIES=	lang
 MASTER_SITES=	https://github.com/JetBrains/kotlin/releases/download/v${PORTVERSION}/
 DISTNAME=	kotlin-compiler-${PORTVERSION}
 
-MAINTAINER=	lwhsu@FreeBSD.org
+MAINTAINER=	mizhka@FreeBSD.org
 COMMENT=	Kotlin Programming Language
 
 LICENSE=	APACHE20
